@@ -1,6 +1,15 @@
 // Catalog page pagination and card generation
 const ITEMS_PER_PAGE = 12;
 let currentPage = 1;
+let activeTheme = ''; // Active theme filter
+
+// Get filtered artworks based on active theme
+function getFilteredArtworks() {
+    if (!activeTheme) {
+        return artworks;
+    }
+    return artworks.filter(artwork => artwork.theme === activeTheme);
+}
 
 // Calculate total pages
 const totalPages = Math.ceil(artworks.length / ITEMS_PER_PAGE);
@@ -10,10 +19,16 @@ function renderCatalog(page = 1) {
     const catalogGrid = document.getElementById('catalog-grid');
     if (!catalogGrid) return;
 
+    // Get filtered artworks
+    const filteredArtworks = getFilteredArtworks();
+
+    // Calculate total pages for filtered results
+    const totalFilteredPages = Math.ceil(filteredArtworks.length / ITEMS_PER_PAGE);
+
     // Calculate start and end indices
     const startIndex = (page - 1) * ITEMS_PER_PAGE;
     const endIndex = startIndex + ITEMS_PER_PAGE;
-    const pageArtworks = artworks.slice(startIndex, endIndex);
+    const pageArtworks = filteredArtworks.slice(startIndex, endIndex);
 
     // Clear grid
     catalogGrid.innerHTML = '';
@@ -49,6 +64,10 @@ function renderPagination() {
     if (!paginationDiv) return;
 
     paginationDiv.innerHTML = '';
+
+    // Recalculate total pages based on filtered artworks
+    const filteredArtworks = getFilteredArtworks();
+    const totalPages = Math.ceil(filteredArtworks.length / ITEMS_PER_PAGE);
 
     // Previous button
     const prevBtn = document.createElement('button');
@@ -147,8 +166,36 @@ function renderPagination() {
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
+    // Update theme counts
+    updateThemeCounts();
+
+    // Check for theme parameter in URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const themeFromURL = urlParams.get('theme');
+    if (themeFromURL) {
+        activeTheme = themeFromURL;
+        updateActiveThemeUI();
+    }
+
     renderCatalog(currentPage);
     renderPagination();
+
+    // Add theme filter event listeners
+    const themeCards = document.querySelectorAll('.theme-card');
+    themeCards.forEach(card => {
+        card.addEventListener('click', () => {
+            const theme = card.dataset.theme;
+            activeTheme = theme;
+            currentPage = 1; // Reset to first page when filtering
+
+            // Update active state
+            updateActiveThemeUI();
+
+            // Re-render catalog with filtered results
+            renderCatalog(currentPage);
+            renderPagination();
+        });
+    });
 
     // Add navbar scroll effect
     window.addEventListener('scroll', () => {
@@ -160,3 +207,44 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// Update theme counts
+function updateThemeCounts() {
+    const themeCounts = {};
+
+    // Count artworks for each theme
+    artworks.forEach(artwork => {
+        const theme = artwork.theme || 'Sin tema';
+        themeCounts[theme] = (themeCounts[theme] || 0) + 1;
+    });
+
+    // Update count displays
+    document.getElementById('count-all').textContent = `${artworks.length} obras`;
+    if (themeCounts['Abstracto']) {
+        document.getElementById('count-abstracto').textContent = `${themeCounts['Abstracto']} obras`;
+    }
+    if (themeCounts['Retrato']) {
+        document.getElementById('count-retrato').textContent = `${themeCounts['Retrato']} obras`;
+    }
+    if (themeCounts['Textual']) {
+        document.getElementById('count-textual').textContent = `${themeCounts['Textual']} obras`;
+    }
+    if (themeCounts['Surrealista']) {
+        document.getElementById('count-surrealista').textContent = `${themeCounts['Surrealista']} obras`;
+    }
+    if (themeCounts['Gestual']) {
+        document.getElementById('count-gestual').textContent = `${themeCounts['Gestual']} obras`;
+    }
+}
+
+// Update active theme UI
+function updateActiveThemeUI() {
+    const themeCards = document.querySelectorAll('.theme-card');
+    themeCards.forEach(card => {
+        if (card.dataset.theme === activeTheme) {
+            card.classList.add('active');
+        } else {
+            card.classList.remove('active');
+        }
+    });
+}
