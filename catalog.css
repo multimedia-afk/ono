@@ -4,8 +4,9 @@
 
 .catalog-header {
     padding: calc(80px + var(--spacing-xl)) var(--spacing-md) var(--spacing-lg);
-    background-color: var(--color-white);
+    background-color: var(--bg-secondary);
     text-align: center;
+    transition: background-color 0.3s ease;
 }
 
 .catalog-header-content {
@@ -14,13 +15,13 @@
 }
 
 .page-title {
-    color: var(--color-charcoal);
+    color: var(--text-primary);
     margin-bottom: var(--spacing-sm);
 }
 
 .page-subtitle {
     font-size: 1.125rem;
-    color: var(--color-gray);
+    color: var(--text-secondary);
     font-weight: 300;
 }
 
@@ -64,8 +65,8 @@
 }
 
 .theme-card {
-    background-color: var(--color-cream);
-    border: 2px solid var(--color-light-gray);
+    background-color: var(--bg-primary);
+    border: 2px solid var(--border-color);
     border-radius: 12px;
     padding: var(--spacing-md);
     text-align: center;
@@ -76,17 +77,17 @@
 
 .theme-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(26, 26, 26, 0.12);
-    border-color: var(--color-charcoal);
+    box-shadow: 0 8px 24px var(--shadow-color);
+    border-color: var(--text-primary);
 }
 
 .theme-card.active {
-    background-color: var(--color-charcoal);
-    border-color: var(--color-charcoal);
+    background-color: var(--text-primary);
+    border-color: var(--text-primary);
 }
 
 .theme-card.active .theme-title {
-    color: var(--color-cream);
+    color: var(--text-inverse);
 }
 
 .theme-card.active .theme-count {
@@ -102,13 +103,13 @@
 .theme-title {
     font-size: 1rem;
     font-weight: 600;
-    color: var(--color-charcoal);
+    color: var(--text-primary);
     margin: 0;
 }
 
 .theme-count {
     font-size: 0.875rem;
-    color: var(--color-gray);
+    color: var(--text-secondary);
     margin: 0;
     font-weight: 400;
 }

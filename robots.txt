@@ -1,0 +1,11 @@
+# robots.txt for ONO Gallery
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.onogallery.com/sitemap.xml
+
+# Block access to configuration and data files
+Disallow: /seo-config.js
+Disallow: /artwork-data.js
