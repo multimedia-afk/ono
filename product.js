@@ -33,13 +33,13 @@ document.addEventListener('DOMContentLoaded', () => {
 function renderProduct(artwork) {
     const productContent = document.getElementById('product-content');
 
-    // Create multiple images for gallery (using same image with different styling)
-    const galleryImages = [
-        artwork.image,
-        artwork.image,
-        artwork.image,
-        artwork.image
-    ];
+    // Create gallery images array: main image + gallery images
+    let galleryImages = [artwork.image]; // Always start with the main image
+
+    // Add gallery images if they exist
+    if (artwork.gallery && artwork.gallery.length > 0) {
+        galleryImages = galleryImages.concat(artwork.gallery);
+    }
 
     // Check if 3D model is available
     const has3DModel = artwork.model3d && artwork.model3d !== '';
@@ -61,6 +61,7 @@ function renderProduct(artwork) {
                 <div class="main-image-wrapper">
                     <img src="${artwork.image}" alt="${artwork.title}" class="main-image" id="main-image">
                 </div>
+                ${galleryImages.length > 1 ? `
                 <div class="thumbnail-gallery">
                     ${galleryImages.map((img, index) => `
                         <div class="thumbnail-wrapper ${index === 0 ? 'active' : ''}" onclick="changeImage('${img}', ${index})">
@@ -68,6 +69,7 @@ function renderProduct(artwork) {
                         </div>
                     `).join('')}
                 </div>
+                ` : ''}
             </div>
             
             ${has3DModel ? `

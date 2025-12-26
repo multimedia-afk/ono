@@ -236,48 +236,57 @@
 
 .main-image-wrapper {
     width: 100%;
-    aspect-ratio: 4 / 5;
-    border-radius: 12px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-primary);
+    border-radius: 8px;
     overflow: hidden;
-    background-color: var(--color-white);
-    box-shadow: 0 4px 30px rgba(26, 26, 26, 0.1);
 }
 
 .main-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: var(--transition-slow);
 }
 
+/* Thumbnail Gallery */
 .thumbnail-gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--spacing-sm);
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .thumbnail-wrapper {
+    width: 100%;
     aspect-ratio: 1;
     border-radius: 8px;
     overflow: hidden;
     cursor: pointer;
     border: 3px solid transparent;
     transition: var(--transition-smooth);
-    background-color: var(--color-white);
-}
-
-.thumbnail-wrapper:hover {
-    border-color: var(--color-gold);
-    transform: scale(1.05);
+    background-color: var(--bg-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .thumbnail-wrapper.active {
-    border-color: var(--color-charcoal);
+    border-color: var(--color-gold);
+}
+
+.thumbnail-wrapper:hover {
+    border-color: var(--text-primary);
 }
 
 .thumbnail-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: var(--transition-smooth);
 }
 
 /* Product Info Column */
@@ -747,4 +756,239 @@ model-viewer::part(default-progress-bar) {
 .contact-link:hover {
     color: var(--color-charcoal);
     text-decoration: underline;
+}
+
+/* ===================================
+   MOBILE RESPONSIVE DESIGN
+   =================================== */
+
+/* Tablet and below */
+@media (max-width: 768px) {
+
+    /* Catalog Header */
+    .catalog-header {
+        padding: calc(70px + var(--spacing-md)) var(--spacing-sm) var(--spacing-md);
+    }
+
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .page-subtitle {
+        font-size: 1rem;
+    }
+
+    /* Catalog Grid - 2 columns on tablet */
+    .catalog-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1.5rem;
+    }
+
+    /* Theme Filter Section */
+    .themes-section {
+        padding: var(--spacing-md) var(--spacing-sm);
+    }
+
+    .themes-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .theme-card {
+        padding: 1rem;
+        min-height: 60px;
+    }
+
+    .theme-title {
+        font-size: 0.9375rem;
+    }
+
+    .theme-count {
+        font-size: 0.8125rem;
+    }
+
+    /* Pagination */
+    .pagination {
+        gap: 0.5rem;
+    }
+
+    .page-btn,
+    .pagination-ellipsis {
+        min-width: 40px;
+        min-height: 44px;
+        font-size: 0.875rem;
+    }
+
+    /* Product Page */
+    .product-container {
+        padding: var(--spacing-md) var(--spacing-sm);
+    }
+
+    .product-layout {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .main-image-wrapper {
+        height: 450px;
+    }
+
+    .thumbnail-gallery {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.75rem;
+    }
+
+    /* Product Info */
+    .product-title {
+        font-size: 1.75rem;
+    }
+
+    .product-artist {
+        font-size: 1rem;
+    }
+
+    .product-description p {
+        font-size: 1rem;
+    }
+
+    .btn-inquiry,
+    .btn-whatsapp {
+        width: 100%;
+        min-height: 52px;
+        font-size: 1rem;
+    }
+
+    /* View Toggle */
+    .view-toggle {
+        gap: 0.5rem;
+    }
+
+    .toggle-btn {
+        min-height: 44px;
+        padding: 0.75rem 1.5rem;
+        font-size: 0.875rem;
+    }
+
+    /* About Page */
+    .about-section {
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+
+    .about-content {
+        padding: 0 var(--spacing-sm);
+    }
+
+    .about-title {
+        font-size: 1.75rem;
+    }
+
+    .mission-vision-grid,
+    .contact-info-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+/* Mobile - Small screens */
+@media (max-width: 480px) {
+
+    /* Catalog Header */
+    .catalog-header {
+        padding: calc(100px + 1rem) 1rem 1rem;
+    }
+
+    .page-title {
+        font-size: 1.75rem;
+    }
+
+    .page-subtitle {
+        font-size: 0.9375rem;
+    }
+
+    /* Catalog Grid - 1 column on mobile */
+    .catalog-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.25rem;
+    }
+
+    /* Theme Filter - Single column */
+    .themes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .theme-card {
+        min-height: 56px;
+    }
+
+    /* Pagination - Smaller on mobile */
+    .page-btn,
+    .pagination-ellipsis {
+        min-width: 36px;
+        min-height: 40px;
+        font-size: 0.8125rem;
+    }
+
+    /* Product Page */
+    .back-link {
+        font-size: 0.875rem;
+        margin-bottom: 1rem;
+    }
+
+    .main-image-wrapper {
+        height: 350px;
+    }
+
+    .thumbnail-gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+    }
+
+    .product-title {
+        font-size: 1.5rem;
+    }
+
+    .product-artist {
+        font-size: 0.9375rem;
+    }
+
+    .product-description p {
+        font-size: 0.9375rem;
+        line-height: 1.7;
+    }
+
+    /* View Toggle - Stack if needed */
+    .view-toggle {
+        flex-wrap: wrap;
+    }
+
+    .toggle-btn {
+        flex: 1;
+        min-width: 140px;
+    }
+
+    /* Fullscreen button */
+    .fullscreen-btn {
+        top: 0.5rem;
+        right: 0.5rem;
+        width: 36px;
+        height: 36px;
+        font-size: 1.25rem;
+    }
+
+    /* About Page */
+    .about-title {
+        font-size: 1.5rem;
+    }
+
+    .box-title {
+        font-size: 1.125rem;
+    }
+
+    .contact-item {
+        padding: 1rem;
+    }
+
+    .contact-value {
+        font-size: 0.9375rem;
+    }
 }

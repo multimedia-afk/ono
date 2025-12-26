@@ -214,7 +214,89 @@ Edita `artwork-data.js` y añade un nuevo objeto al array:
     theme: "Abstracto", // Abstracto, Retrato, Textual, Surrealista, Gestual
     image: "images/artworks/nueva-obra.jpg",
     model3d: "images/models/obra-3d.glb", // Opcional
-    description: "Descripción detallada de la obra..."
+    description: "Descripción detallada de la obra...",
+    gallery: [] // Array para imágenes adicionales
+}
+```
+
+### Agregar Imágenes a la Galería de una Obra
+
+Cada obra puede tener una galería de imágenes adicionales (detalles, proceso, diferentes ángulos, videos, etc.).
+
+#### Estructura de la Galería
+
+La propiedad `gallery` es un array que puede contener hasta 3 elementos inicialmente, pero es extensible para más en el futuro:
+
+```javascript
+gallery: [
+    "artworkangularpictures/obra1-detail1.jpg",
+    "artworkangularpictures/obra1-process.mp4",
+    "artworkangularpictures/obra1-angle2.webp"
+]
+```
+
+#### Pasos para Agregar Imágenes
+
+1. **Crear la carpeta** (si no existe):
+   ```bash
+   mkdir -p artworkangularpictures
+   ```
+
+2. **Subir tus imágenes/videos** a la carpeta `artworkangularpictures/`
+   - Usa nombres descriptivos: `obra[ID]-detail1.jpg`, `obra[ID]-process.mp4`, etc.
+   - Formatos recomendados: `.webp`, `.jpg`, `.png` para imágenes; `.mp4`, `.webm` para videos
+
+3. **Actualizar artwork-data.js**:
+   ```javascript
+   {
+       id: 1,
+       title: "Presencia Latente",
+       // ... otras propiedades
+       gallery: [
+           "artworkangularpictures/obra1-detail1.jpg",
+           "artworkangularpictures/obra1-detail2.webp",
+           "artworkangularpictures/obra1-making.mp4"
+       ]
+   }
+   ```
+
+#### Tipos de Contenido para la Galería
+
+**Imágenes Sugeridas:**
+- 📸 Detalles de la obra (close-ups de texturas, pinceladas)
+- 🎨 Proceso de creación (work in progress)
+- 📐 Diferentes ángulos o iluminación
+- 🖼️ Obra instalada en galería o espacio
+
+**Videos Sugeridos:**
+- 🎬 Time-lapse del proceso creativo
+- 🌀 Video 360° de la obra
+- 👨‍🎨 Artista hablando sobre la obra
+
+#### Límites y Extensibilidad
+
+- **Actual**: 3 espacios por defecto
+- **Futuro**: El array es extensible, puedes añadir más elementos según necesites
+- **Tamaño**: Se recomienda optimizar imágenes (< 2MB cada una)
+
+#### Ejemplo Completo
+
+```javascript
+{
+    id: 1,
+    title: "Presencia Latente",
+    artist: "Alfredo Cano Briceño",
+    year: 2024,
+    price: 2000,
+    theme: "Surrealista",
+    image: "images/artworks/pintura1.webp",
+    model3d: "images/models/obra3d1.glb",
+    description: "Esta obra materializa...",
+    gallery: [
+        "artworkangularpictures/obra1-texture-detail.webp",
+        "artworkangularpictures/obra1-full-light.jpg",
+        "artworkangularpictures/obra1-process-timelapse.mp4"
+    ]
 }
 ```
 
