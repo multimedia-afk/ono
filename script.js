@@ -63,34 +63,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-
-document.addEventListener('DOMContentLoaded', function () {
-    // --- Configuración ---
-    const numFlakes = 50;      // Cantidad de copos
-    const sizeFlakeMin = 10;   // Tamaño mínimo px
-    const sizeFlakeMax = 20;   // Tamaño máximo px
-    const flakeChars = ['❄', '✻', '✼', '✽']; // Formas de los copos
-
-    // --- Lógica (No tocar) ---
-    // Si quieres que NO salga en una pagina específica, descomenta las lineas de abajo:
-    // if (window.location.href.includes('contacto.html')) return;
-
-    for (let i = 0; i < numFlakes; i++) {
-        const flake = document.createElement('div');
-        flake.className = 'snowflake';
-
-        // Posición horizontal aleatoria
-        flake.style.left = Math.random() * 100 + 'vw';
-
-        // Velocidad aleatoria (entre 2 y 5 segundos)
-        flake.style.animationDuration = Math.random() * 3 + 2 + 's';
-
-        // Tamaño aleatorio
-        flake.style.fontSize = Math.random() * (sizeFlakeMax - sizeFlakeMin) + sizeFlakeMin + 'px';
-
-        // Carácter aleatorio
-        flake.textContent = flakeChars[Math.floor(Math.random() * flakeChars.length)];
-
-        document.body.appendChild(flake);
-    }
-});
