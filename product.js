@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Update page title
-    document.getElementById('page-title').textContent = `${artwork.title} - ONO Galería`;
+    document.getElementById('page-title').textContent = `${artwork.title} - ONO Gallery`;
 
     // Render product content
     renderProduct(artwork);
@@ -50,14 +50,14 @@ function renderProduct(artwork) {
             ${has3DModel ? `
             <!-- View Toggle Buttons -->
             <div class="view-toggle">
-                <button class="toggle-btn active" id="btn-2d" onclick="toggleView('2d')">Vista 2D</button>
-                <button class="toggle-btn" id="btn-3d" onclick="toggleView('3d')">Vista 3D</button>
+                <button class="toggle-btn active" id="btn-2d" onclick="toggleView('2d')">2D View</button>
+                <button class="toggle-btn" id="btn-3d" onclick="toggleView('3d')">3D View</button>
             </div>
             ` : ''}
             
             <!-- 2D Gallery -->
             <div class="gallery-2d-wrapper" id="gallery-2d">
-                <button class="fullscreen-btn" onclick="openImageFullscreen()" title="Ver en pantalla completa">⛶</button>
+                <button class="fullscreen-btn" onclick="openImageFullscreen()" title="View in fullscreen">⛶</button>
                 <div class="main-image-wrapper">
                     <img src="${artwork.image}" alt="${artwork.title}" class="main-image" id="main-image">
                 </div>
@@ -75,7 +75,7 @@ function renderProduct(artwork) {
             ${has3DModel ? `
             <!-- 3D Model Viewer -->
             <div class="viewer-3d-wrapper" id="viewer-3d">
-                <button class="fullscreen-btn" onclick="open3DFullscreen()" title="Ver modelo 3D en pantalla completa">⛶</button>
+                <button class="fullscreen-btn" onclick="open3DFullscreen()" title="View 3D model in fullscreen">⛶</button>
                 <model-viewer
                     id="model-viewer-element"
                     src="${artwork.model3d}"
@@ -102,10 +102,10 @@ function renderProduct(artwork) {
                     <div slot="progress-bar" style="display: none;"></div>
                 </model-viewer>
                 <div class="model-viewer-controls">
-                    <div class="control-item">🖱️ <strong>Arrastrar:</strong> Rotar en todos los ángulos</div>
-                    <div class="control-item">✌️ <strong>Click derecho + Arrastrar:</strong> Mover vertical/horizontal</div>
-                    <div class="control-item">🔍 <strong>Rueda del mouse:</strong> Zoom in/out</div>
-                    <div class="control-item">📱 <strong>Móvil - 1 dedo:</strong> Rotar | <strong>2 dedos:</strong> Mover y zoom</div>
+                    <div class="control-item">🖱️ <strong>Drag:</strong> Rotate in all angles</div>
+                    <div class="control-item">✌️ <strong>Right click + Drag:</strong> Move vertical/horizontal</div>
+                    <div class="control-item">🔍 <strong>Mouse wheel:</strong> Zoom in/out</div>
+                    <div class="control-item">📱 <strong>Mobile - 1 finger:</strong> Rotate | <strong>2 fingers:</strong> Move and zoom</div>
                 </div>
             </div>
             ` : ''}
@@ -121,7 +121,7 @@ function renderProduct(artwork) {
             </div>
             
             <button class="btn-inquiry btn-whatsapp" onclick="handleWhatsAppInquiry('${artwork.title}', '${artwork.artist}')">
-                <span class="whatsapp-icon">📱</span> Consultar por WhatsApp
+                <span class="whatsapp-icon">📱</span> Inquire via WhatsApp
             </button>
         </div>
         
@@ -143,8 +143,8 @@ function renderProduct(artwork) {
                     if (viewerWrapper) {
                         viewerWrapper.innerHTML = `
                             <div style="padding: 2rem; text-align: center; color: #666;">
-                                <p>⚠️ No se pudo cargar el modelo 3D</p>
-                                <p style="font-size: 0.875rem; margin-top: 0.5rem;">Verifica que el archivo existe en: ${artwork.model3d}</p>
+                            <p>⚠️ Could not load 3D model</p>
+                            <p style="font-size: 0.875rem; margin-top: 0.5rem;">Verify that the file exists at: ${artwork.model3d}</p>
                             </div>
                         `;
                     }
@@ -257,7 +257,7 @@ function handleWhatsAppInquiry(title, artist) {
     const phoneNumber = '527771202775'; // Format: country code + number (no + or spaces)
 
     // Pre-filled message
-    const message = `Hola, estoy interesado/a en la obra "${title}" de ${artist}. ¿Podrían proporcionarme más información sobre su disponibilidad?`;
+    const message = `Hello, I am interested in the artwork "${title}" by ${artist}. Could you provide me with more information about its availability?`;
 
     // Encode the message for URL
     const encodedMessage = encodeURIComponent(message);

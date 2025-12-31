@@ -4,17 +4,17 @@
 const seoConfig = {
     // Global site settings
     site: {
-        name: "ONO Galería de Arte",
+        name: "ONO Art Gallery",
         url: "https://www.onogallery.com", // UPDATE THIS with your actual domain
         logo: "https://www.onogallery.com/logo1b.PNG", // UPDATE THIS with full URL
-        language: "es",
-        locale: "es_MX",
+        language: "en",
+        locale: "en_US",
         twitterHandle: "@onogallery" // UPDATE THIS with your Twitter handle
     },
 
     // Default fallback values
     defaults: {
-        author: "ONO Galería de Arte",
+        author: "ONO Art Gallery",
         image: "https://www.onogallery.com/images/artworks/obra1.jpg", // Default share image
         imageAlt: "ONO Contemporary Art Gallery"
     },
@@ -22,34 +22,34 @@ const seoConfig = {
     // Page-specific SEO data
     pages: {
         home: {
-            title: "ONO - Galería de Arte Contemporáneo",
-            description: "ONO es una galería de arte contemporáneo dedicada a presentar obras excepcionales de artistas emergentes y establecidos. Descubre nuestra colección curada de arte moderno.",
-            keywords: "galería de arte, arte contemporáneo, obras de arte, Alfredo Cano Briceño, colección de arte, galería México, arte moderno",
+            title: "ONO - Contemporary Art Gallery",
+            description: "ONO is a contemporary art gallery dedicated to presenting exceptional works by emerging and established artists. Discover our curated collection of modern art.",
+            keywords: "art gallery, contemporary art, artworks, Alfredo Cano Briceño, art collection, Mexico gallery, modern art",
             image: "https://www.onogallery.com/images/artworks/obra1.jpg",
-            imageAlt: "Galería de Arte ONO - Arte Contemporáneo",
+            imageAlt: "ONO Art Gallery - Contemporary Art",
             type: "website"
         },
 
         catalog: {
-            title: "Catálogo Completo - ONO Galería de Arte",
-            description: "Explora nuestra colección completa de arte contemporáneo. ONO presenta obras excepcionales de artistas emergentes y establecidos, organizadas por temas y estilos.",
-            keywords: "catálogo de arte, obras disponibles, comprar arte, colección completa, arte abstracto, retratos, arte textual",
+            title: "Full Catalog - ONO Art Gallery",
+            description: "Explore our complete collection of contemporary art. ONO presents exceptional works by emerging and established artists, organized by themes and styles.",
+            keywords: "art catalog, available works, buy art, complete collection, abstract art, portraits, textual art",
             image: "https://www.onogallery.com/images/artworks/pintura3.jpg",
-            imageAlt: "Catálogo de Arte Contemporáneo - ONO Gallery",
+            imageAlt: "Contemporary Art Catalog - ONO Gallery",
             type: "website"
         },
 
         about: {
-            title: "Acerca de - ONO Galería de Arte",
-            description: "Conoce más sobre ONO Galería de Arte, nuestra misión, visión y el artista Alfredo Cano Briceño. Descubre nuestra historia y compromiso con el arte contemporáneo.",
-            keywords: "acerca de, galería de arte, Alfredo Cano Briceño, misión galería, visión artística, arte contemporáneo México",
+            title: "About - ONO Art Gallery",
+            description: "Learn more about ONO Art Gallery, our mission, vision, and artist Alfredo Cano Briceño. Discover our history and commitment to contemporary art.",
+            keywords: "about, art gallery, Alfredo Cano Briceño, gallery mission, artistic vision, contemporary art Mexico",
             image: "https://www.onogallery.com/logo1b.PNG",
-            imageAlt: "ONO Galería de Arte - Acerca de Nosotros",
+            imageAlt: "ONO Art Gallery - About Us",
             type: "website"
         },
 
         product: {
-            titleTemplate: "{artworkTitle} - {artistName} | ONO Galería",
+            titleTemplate: "{artworkTitle} - {artistName} | ONO Gallery",
             descriptionTemplate: "{description}",
             type: "product"
         }
@@ -59,10 +59,10 @@ const seoConfig = {
     organization: {
         "@context": "https://schema.org",
         "@type": "ArtGallery",
-        "name": "ONO Galería de Arte",
+        "name": "ONO Art Gallery",
         "url": "https://www.onogallery.com",
         "logo": "https://www.onogallery.com/logo1b.PNG",
-        "description": "Galería de arte contemporáneo dedicada a presentar obras excepcionales de artistas emergentes y establecidos",
+        "description": "Contemporary art gallery dedicated to presenting exceptional works by emerging and established artists",
         "address": {
             "@type": "PostalAddress",
             "addressCountry": "MX",

@@ -71,7 +71,7 @@ function renderPagination() {
 
     // Previous button
     const prevBtn = document.createElement('button');
-    prevBtn.textContent = 'Anterior';
+    prevBtn.textContent = 'Previous';
     prevBtn.className = 'pagination-btn';
     prevBtn.disabled = currentPage === 1;
     prevBtn.onclick = () => {
@@ -151,7 +151,7 @@ function renderPagination() {
 
     // Next button
     const nextBtn = document.createElement('button');
-    nextBtn.textContent = 'Siguiente';
+    nextBtn.textContent = 'Next';
     nextBtn.className = 'pagination-btn';
     nextBtn.disabled = currentPage === totalPages;
     nextBtn.onclick = () => {
@@ -219,21 +219,21 @@ function updateThemeCounts() {
     });
 
     // Update count displays
-    document.getElementById('count-all').textContent = `${artworks.length} obras`;
-    if (themeCounts['Abstracto']) {
-        document.getElementById('count-abstracto').textContent = `${themeCounts['Abstracto']} obras`;
+    document.getElementById('count-all').textContent = `${artworks.length} artworks`;
+    if (themeCounts['Abstract']) {
+        document.getElementById('count-abstract').textContent = `${themeCounts['Abstract']} artworks`;
     }
-    if (themeCounts['Retrato']) {
-        document.getElementById('count-retrato').textContent = `${themeCounts['Retrato']} obras`;
+    if (themeCounts['Portrait']) {
+        document.getElementById('count-portrait').textContent = `${themeCounts['Portrait']} artworks`;
     }
     if (themeCounts['Textual']) {
-        document.getElementById('count-textual').textContent = `${themeCounts['Textual']} obras`;
+        document.getElementById('count-textual').textContent = `${themeCounts['Textual']} artworks`;
     }
-    if (themeCounts['Surrealista']) {
-        document.getElementById('count-surrealista').textContent = `${themeCounts['Surrealista']} obras`;
+    if (themeCounts['Surrealist']) {
+        document.getElementById('count-surrealist').textContent = `${themeCounts['Surrealist']} artworks`;
     }
-    if (themeCounts['Gestual']) {
-        document.getElementById('count-gestual').textContent = `${themeCounts['Gestual']} obras`;
+    if (themeCounts['Gestural']) {
+        document.getElementById('count-gestural').textContent = `${themeCounts['Gestural']} artworks`;
     }
 }
 
