@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Full Gallery - ONO Art Gallery</title>
+    <meta name="title" content="Full Gallery - ONO Art Gallery">
+    <meta name="description"
+        content="Explore our complete collection of contemporary art. ONO presents exceptional works by emerging and established artists, organized by collections and styles.">
+    <meta name="keywords"
+        content="art gallery, available works, buy art, complete collection, abstract art, portraits, textual art">
+    <meta name="author" content="ONO Art Gallery">
+    <meta name="language" content="English">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.onogallery.com/gallery.html">
+    <meta property="og:title" content="Full Gallery - ONO Art Gallery">
+    <meta property="og:description"
+        content="Explore our complete collection of contemporary art. ONO presents exceptional works by emerging and established artists.">
+    <meta property="og:image" content="https://www.onogallery.com/images/artworks/pintura3.jpg">
+    <meta property="og:image:alt" content="Contemporary Art Gallery - ONO">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="ONO Art Gallery">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.onogallery.com/gallery.html">
+    <meta property="twitter:title" content="Full Gallery - ONO Art Gallery">
+    <meta property="twitter:description"
+        content="Explore our complete collection of contemporary art organized by collections and styles.">
+    <meta property="twitter:image" content="https://www.onogallery.com/images/artworks/pintura3.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.onogallery.com/gallery.html">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="logo1b.PNG" alt="ONO Gallery" class="logo-img"></a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="about.html" class="nav-link">About us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Gallery Header -->
+    <section class="catalog-header">
+        <div class="catalog-header-content">
+            <h1 class="page-title">Full Gallery</h1>
+            <p class="page-subtitle">Our complete collection of contemporary art</p>
+        </div>
+    </section>
+
+    <!-- Collections Filter Section -->
+    <section class="themes-section">
+        <div class="themes-container">
+            <h2 class="section-title">Explore by Collection</h2>
+            <div class="themes-grid">
+                <button class="theme-card active" data-collection="">
+                    <div class="theme-content">
+                        <h3 class="theme-title">All</h3>
+                        <p class="theme-count" id="count-all">80 artworks</p>
+                    </div>
+                </button>
+                <button class="theme-card" data-collection="Abstract">
+                    <div class="theme-content">
+                        <h3 class="theme-title">Abstract</h3>
+                        <p class="theme-count" id="count-abstract">0 artworks</p>
+                    </div>
+                </button>
+                <button class="theme-card" data-collection="Portrait">
+                    <div class="theme-content">
+                        <h3 class="theme-title">Portrait</h3>
+                        <p class="theme-count" id="count-portrait">0 artworks</p>
+                    </div>
+                </button>
+                <button class="theme-card" data-collection="Textual">
+                    <div class="theme-content">
+                        <h3 class="theme-title">Textual</h3>
+                        <p class="theme-count" id="count-textual">0 artworks</p>
+                    </div>
+                </button>
+                <button class="theme-card" data-collection="Surrealist">
+                    <div class="theme-content">
+                        <h3 class="theme-title">Surrealist</h3>
+                        <p class="theme-count" id="count-surrealist">0 artworks</p>
+                    </div>
+                </button>
+                <button class="theme-card" data-collection="Gestural">
+                    <div class="theme-content">
+                        <h3 class="theme-title">Gestural</h3>
+                        <p class="theme-count" id="count-gestural">0 artworks</p>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid Section -->
+    <section class="catalog-section">
+        <div class="catalog-container">
+            <div id="gallery-grid" class="catalog-grid"></div>
+
+            <!-- Pagination -->
+            <div id="pagination" class="pagination"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 class="footer-title"><img src="logo1b.PNG" alt="ONO Gallery" class="logo-img"></h3>
+                <p class="footer-text">
+
+                </p>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-heading">Contact</h4>
+                <a href="tel:+527771202775" class="footer-link">+52 777 120 2775</a>
+                <a href="mailto:claudia@backyou.com.mx" class="footer-link">claudia@backyou.com.mx</a>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-heading">Hours</h4>
+                <p class="footer-text">
+                    Monday - Saturday<br>
+                    8:00 AM - 6:00 PM<br>
+
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ONO Art Gallery. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="artwork-data.js"></script>
+    <script src="gallery.js"></script>
+</body>
+
+</html>

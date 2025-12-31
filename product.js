@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!artwork) {
         // Redirect to catalog if artwork not found
-        window.location.href = 'catalog.html';
+        window.location.href = 'gallery.html';
         return;
     }
 

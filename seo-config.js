@@ -30,12 +30,12 @@ const seoConfig = {
             type: "website"
         },
 
-        catalog: {
-            title: "Full Catalog - ONO Art Gallery",
-            description: "Explore our complete collection of contemporary art. ONO presents exceptional works by emerging and established artists, organized by themes and styles.",
-            keywords: "art catalog, available works, buy art, complete collection, abstract art, portraits, textual art",
+        gallery: {
+            title: "Full Gallery - ONO Art Gallery",
+            description: "Explore our complete collection of contemporary art. ONO presents exceptional works by emerging and established artists, organized by collections and styles.",
+            keywords: "art gallery, available works, buy art, complete collection, abstract art, portraits, textual art",
             image: "https://www.onogallery.com/images/artworks/pintura3.jpg",
-            imageAlt: "Contemporary Art Catalog - ONO Gallery",
+            imageAlt: "Contemporary Art Gallery - ONO",
             type: "website"
         },
 
