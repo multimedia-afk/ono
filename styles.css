@@ -595,6 +595,12 @@ p {
     margin-bottom: var(--spacing-xs);
     font-weight: 600;
     text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 1.3;
 }
 
 .art-meta {
@@ -805,6 +811,12 @@ p {
     .footer-container {
         grid-template-columns: 1fr;
         gap: var(--spacing-md);
+    }
+
+    /* Footer contact links spacing */
+    .footer-text a {
+        display: block;
+        margin-bottom: 0.75rem;
     }
 
     .footer-title {

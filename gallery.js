@@ -38,6 +38,9 @@ function renderGallery(page = 1) {
         const card = document.createElement('div');
         card.className = 'art-card';
         card.onclick = () => {
+            // Save current page and collection before navigating
+            localStorage.setItem('galleryPage', currentPage);
+            localStorage.setItem('galleryCollection', activeCollection);
             window.location.href = `product.html?id=${artwork.id}`;
         };
 
@@ -164,23 +167,8 @@ function renderPagination() {
     paginationDiv.appendChild(nextBtn);
 }
 
-// Initialize on page load
-document.addEventListener('DOMContentLoaded', () => {
-    // Update collection counts
-    updateCollectionCounts();
-
-    // Check for collection parameter in URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const collectionFromURL = urlParams.get('collection');
-    if (collectionFromURL) {
-        activeCollection = collectionFromURL;
-        updateActiveCollectionUI();
-    }
-
-    renderGallery(currentPage);
-    renderPagination();
-
-    // Add collection filter event listeners
+// Setup collection filter event listeners
+function setupCollectionFilters() {
     const collectionCards = document.querySelectorAll('.theme-card');
     collectionCards.forEach(card => {
         card.addEventListener('click', () => {
@@ -196,16 +184,16 @@ document.addEventListener('DOMContentLoaded', () => {
             renderPagination();
         });
     });
+}
 
-    // Add navbar scroll effect
-    window.addEventListener('scroll', () => {
-        const navbar = document.getElementById('navbar');
-        if (window.scrollY > 50) {
-            navbar.style.boxShadow = '0 2px 20px rgba(26, 26, 26, 0.08)';
-        } else {
-            navbar.style.boxShadow = 'none';
-        }
-    });
+// Navbar scroll effect
+window.addEventListener('scroll', () => {
+    const navbar = document.getElementById('navbar');
+    if (window.scrollY > 50) {
+        navbar.style.boxShadow = '0 2px 20px rgba(26, 26, 26, 0.08)';
+    } else {
+        navbar.style.boxShadow = 'none';
+    }
 });
 
 // Update collection counts
@@ -248,3 +236,41 @@ function updateActiveCollectionUI() {
         }
     });
 }
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', () => {
+    // Check for collection parameter in URL first
+    const urlParams = new URLSearchParams(window.location.search);
+    const collectionFromURL = urlParams.get('collection');
+
+    if (collectionFromURL) {
+        activeCollection = collectionFromURL;
+        updateActiveCollectionUI();
+    } else {
+        // Restore collection from localStorage if returning from product page
+        const savedCollection = localStorage.getItem('galleryCollection');
+        if (savedCollection) {
+            activeCollection = savedCollection;
+            updateActiveCollectionUI();
+        }
+    }
+
+    // Restore page number if returning from product page
+    const savedPage = localStorage.getItem('galleryPage');
+    if (savedPage) {
+        currentPage = parseInt(savedPage);
+        // Clear saved values after restoring
+        localStorage.removeItem('galleryPage');
+        localStorage.removeItem('galleryCollection');
+    }
+
+    // Update collection counts
+    updateCollectionCounts();
+
+    // Render gallery and pagination
+    renderGallery(currentPage);
+    renderPagination();
+
+    // Setup collection filters
+    setupCollectionFilters();
+});
