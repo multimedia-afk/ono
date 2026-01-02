@@ -85,7 +85,7 @@ const artworks = [
     {
         id: 7,
         title: "The Gravity of Silence",
-        artist: "Alfredo Cano Briceeno",
+        artist: "Alfredo Cano Briceño",
         year: 2024,
         price: 14800,
         theme: "Portrait",
