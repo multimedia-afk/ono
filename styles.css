@@ -142,6 +142,9 @@
     /* Footer logo swap for dark theme */
     .footer-logo {
         content: url('logo1b.PNG');
+        max-width: 200px;
+        width: auto;
+        height: auto;
     }
 
     /* Ensure catalog button wrapper buttons have proper colors */
@@ -819,9 +822,9 @@ p {
         margin-bottom: 0.75rem;
     }
 
-    /* Footer logo sizing for mobile */
+    /* Footer logo sizing for mobile - light mode */
     .footer-logo {
-        max-width: 180px;
+        max-width: 160px;
         height: auto;
     }
 
