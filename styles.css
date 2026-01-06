@@ -316,7 +316,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('images/artworks/Portada.webp');
+    background-image: url('images/artworks/portada.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
