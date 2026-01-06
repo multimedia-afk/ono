@@ -139,13 +139,7 @@
         color: #b8b8b8 !important;
     }
 
-    /* Footer logo swap for dark theme */
-    .footer-logo {
-        content: url('logo1b.PNG');
-        max-width: 200px;
-        width: auto;
-        height: auto;
-    }
+    /* Footer logo will be swapped via JavaScript */
 
     /* Ensure catalog button wrapper buttons have proper colors */
     .catalog-button-wrapper .btn-secondary {
@@ -165,7 +159,8 @@
     .featured .art-card {
         backdrop-filter: none;
         -webkit-backdrop-filter: none;
-        background: rgba(0, 0, 0, 0.85);
+        background: rgba(50, 50, 50, 0.9);
+        /* Dark gray instead of black */
     }
 }
 

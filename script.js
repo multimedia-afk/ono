@@ -62,4 +62,31 @@ document.addEventListener('DOMContentLoaded', () => {
             };
         }
     });
+
+    // Initialize footer logo based on current theme
+    updateFooterLogo();
 });
+
+// Footer logo swap based on theme (cross-browser compatible)
+function updateFooterLogo() {
+    const footerLogo = document.getElementById('footer-logo');
+    if (footerLogo) {
+        // Check for dark-mode class or system preference  
+        const isDarkMode = document.body.classList.contains('dark-mode') ||
+            (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        footerLogo.src = isDarkMode ? 'logo1b.PNG' : 'logo1g.PNG';
+    }
+}
+
+// Listen for system dark mode changes
+if (window.matchMedia) {
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateFooterLogo);
+}
+
+// Update logo when theme toggle exists
+const themeToggle = document.querySelector('[data-theme-toggle]') || document.getElementById('themeToggle');
+if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+        setTimeout(updateFooterLogo, 50);
+    });
+}

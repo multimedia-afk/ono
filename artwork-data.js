@@ -424,6 +424,7 @@ const artworks = [
         price: 25300,
         theme: "Abstract",
         image: "images/artworks/pintura35.webp",
+        model3d: "images/models/TheVisceralAnatomyofRed.glb",
         description: "This narrow, vertical composition offers a frenetic and dense exploration of organic fragmentation, dominated by a saturated palette of crimson, burgundy, and fleshy pinks. The canvas is meticulously packed with small, cell-like shapes and thick, interlocking brushstrokes that suggest a microscopic view of muscle tissue or a landscape in the middle of a violent, biological transformation. Near the center, a singular, dark ovoid shape mimics an eye, providing a fleeting moment of figurative recognition within an otherwise overwhelming field of abstract complexity. By utilizing vertical drips and varying the opacity of the paint, the work creates a sense of internal pressure and constant flux, reflecting on the raw intensity of physical existence and the chaotic beauty found within the hidden structures of the body.",
         gallery: [
             "images/artworksangularpictures/Obra1-31.jpg",
@@ -463,7 +464,7 @@ const artworks = [
         price: 19600,
         theme: "Abstract",
         image: "images/artworks/pintura38.webp",
-        model3d: "images/models/obra3d38.glb",
+        model3d: "images/models/TheAmberVigil.glb",
         description: "This intimate square portrait depicts a young girl with long, flowing dark hair set against a textured, golden-yellow background that radiates a warm, sunset-like glow. The subject’s face is rendered with deep sienna and ochre tones, utilizing strong light and shadow to define her features and create a sense of three-dimensional volume that stands out from the flatter, gestural application of the background. Her expression is one of quiet, observant stillness, with wide eyes that gaze directly at the viewer, conveying a maturity and a hint of melancholy beyond her years. The inclusion of thin, branch-like lines tracing across the upper corners of the composition suggests a natural setting or an interior space being overtaken by the outside world, framing the figure in a state of soft, atmospheric suspension. It is a study of youth and the contemplative weight of the gaze, where the dominance of the amber palette creates a timeless, hallowed environment for the individual spirit.",
         gallery: [
             "images/artworksangularpictures/Obra1-34.jpg",
@@ -504,6 +505,7 @@ const artworks = [
         price: 21800,
         theme: "Abstract",
         image: "images/artworks/pintura41.webp",
+        model3d: "images/models/TheCelestialDrifter.glb",
         description: "This square-format figurative work presents a nude, androgynous figure suspended within a vast, turbulent atmosphere of grey and white gestural brushstrokes. The subject is rendered with a visceral, fleshy realism, featuring a distended abdomen and prominent breasts that suggest themes of fertility, aging, or the heavy physical toll of existence. Set against the chaotic, cloud-like background, the figure’s sallow, multi-toned skin—marked by greenish shadows and warm ochre highlights—creates a sense of vulnerability and isolation. The subject's head is turned in profile, gazing away from the viewer toward an unseen horizon, while dark, wind-swept hair trails upward, adding to the feeling of weightless suspension in a purgatorial or celestial void. It is a raw exploration of the human form as a solitary vessel, drifting through an elemental space where the boundaries between the body and the ether are blurred by thick, energetic applications of paint.",
         gallery: [
             "images/artworksangularpictures/Obra1-37.jpg",
@@ -517,7 +519,7 @@ const artworks = [
         price: 18600,
         theme: "Abstract",
         image: "images/artworks/pintura42.webp",
-        model3d: "images/models/obra3d42.glb",
+        model3d: "images/models/TheSubterraneanPulseofOchre.glb",
         description: "This vertical composition presents a dense, biomorphic landscape dominated by earthy tones of olive green, mustard yellow, and deep umber. The work is characterized by fluid, winding contours that divide the canvas into organic chambers, suggesting the internal structures of a cavern or a microscopic view of soil and roots. Subtle accents of bruised crimson and charcoal grey are embedded within the layers, creating a sense of hidden movement and biological decay. By utilizing broad, expressive brushstrokes and varying the opacity of the paint, the piece evokes an atmosphere of quiet, ancient weight, reflecting on the slow geological and psychological processes that occur beneath the surface of the visible world.",
         gallery: [
             "images/artworksangularpictures/Obra1-38.jpg",
@@ -531,7 +533,7 @@ const artworks = [
         price: 15500,
         theme: "Abstract",
         image: "images/artworks/pintura43.webp",
-        model3d: "images/models/obra3d43.glb",
+        model3d: "images/models/TheObsidianEchoofSelfReproach.glb",
         description: "This horizontal conceptual work presents a stark, monochromatic exploration of internal pressure and the passage of time, featuring layers of black-on-black text that emerge from a dark, textured field. Utilizing both stenciled and handwritten typography in varying gloss levels, the composition repeats demanding phrases such as HAZ ALGO DE TU VIDA POR DIOS (Do something with your life for God's sake) and TRABAJA (Work), creating a visual representation of a relentless, self-critical internal monologue. Small, subtle inscriptions like YO VS EL TIEMPO Y MI CABEZA (Me vs time and my head) reveal the core of the conflict, suggesting a state of existential paralysis where the artist’s own thoughts become a dense, suffocating landscape. By stripping away all color and imagery, the work forces a confrontation with the weight of expectation and the exhaustion of persistent effort, where the act of painting itself becomes a battle against the -wasteland- of unproductive days.",
         gallery: [
             "images/artworksangularpictures/Obra1-39.jpg",
@@ -545,6 +547,7 @@ const artworks = [
         price: 23700,
         theme: "Abstract",
         image: "images/artworks/pintura44.webp",
+        model3d: "images/models/TheKineticEntanglementofEarthandEther.glb",
         description: "This vertical composition presents a dense, high-energy exploration of movement, where a chaotic network of thick, gestural brushstrokes in warm ochre, sienna, and tan dominates the field. The work functions as a study of perpetual motion, with sweeping arcs of paint that overlap and intertwine to suggest the rustling of dry foliage, the shifting of desert sands, or a mind attempting to organize a flood of sensory data. Interspersed within the dominant earthy palette are flashes of vibrant violet, mustard yellow, and forest green, which provide rhythmic counterpoints and a sense of hidden, biological depth within the frantic surface. By layering aggressive impasto against more fluid, translucent sweeps, the composition creates a tactile topography that refuses to settle, ultimately reflecting on the restless, uncontained nature of the creative process and the vibrant, often messy interconnectedness of the natural world.",
         gallery: [
             "images/artworksangularpictures/Obra1-40.jpg",
@@ -558,7 +561,7 @@ const artworks = [
         price: 19900,
         theme: "Abstract",
         image: "images/artworks/pintura45.webp",
-        model3d: "images/models/obra3d45.glb",
+        model3d: "images/models/TheBanquetofEternalRepose.glb",
         description: "This square composition presents a dark, theatrical void where a headless, muscular male nude floats in a state of suspended animation or ritual sacrifice. The figure is rendered with a textured, parchment-like skin and wears a singular, intricate black-and-white patterned legging, suggesting a bizarre fusion of classical sculpture and contemporary artifice. In the upper right corner, the stenciled phrase CERDO A LAS FINAS HIERBAS (Pork with fine herbs) introduces a jarring, culinary irony that transforms the body into a piece of meat, critiquing the commodification and consumption of the human form. A simple white line drawing of a sliced loaf of bread rests in the bottom left, providing a domestic, almost Eucharistic counterpoint to the central figure's physical intensity. By isolating these disparate elements against a deep charcoal background, the work explores themes of mortality, sustenance, and the absurdity of assigning value to the flesh within a sterile, indifferent space.",
         gallery: [
             "images/artworksangularpictures/Obra1-41.jpg",
@@ -572,6 +575,7 @@ const artworks = [
         price: 14600,
         theme: "Abstract",
         image: "images/artworks/pintura46.webp",
+        model3d: "images/models/ThePrideoftheHomeCorral.glb",
         description: "This horizontal mixed-media work returns to the visceral imagery of the bullfight, utilizing a monochromatic sepia and umber palette to present a scene of ritualized confrontation. The composition features a matador and a bull rendered with broad, sketchy brushstrokes that emphasize movement and the dusty atmosphere of the arena, while vertical drips of dark pigment suggest the physical toll of the struggle. Superimposed across the center of the image is a bold, stenciled Spanish inscription that declares a lack of interest in famous figures of the craft, asserting a fierce preference for the bull from one's own corral. By layering this defiant textual statement over the traditional imagery of the tauromaquia, the piece explores themes of local identity, territorial pride, and the rejection of external celebrity in favor of a personal, grounded reality.",
         gallery: [
             "images/artworksangularpictures/Obra1-42.jpg",
