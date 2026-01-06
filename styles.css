@@ -29,7 +29,7 @@
     --shadow-color: rgba(26, 26, 26, 0.08);
     --navbar-bg: rgba(0, 0, 0, 0.95);
     --navbar-text: #FFFFFF;
-    --overlay-bg: rgba(249, 248, 244, 0.7);
+    --overlay-bg: rgba(249, 248, 244, 0.3);
 
     /* Typography */
     --font-serif: 'Playfair Display', Georgia, serif;
