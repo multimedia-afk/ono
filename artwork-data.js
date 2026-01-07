@@ -39,7 +39,7 @@ const artworks = [
         price: 15900,
         theme: "Abstract",
         image: "images/artworks/pintura3.webp",
-        model3d: "images/models/",
+        model3d: "images/models/BotanicalAnatomy.glb",
         description: "This piece manifests as a botanical anatomy where the human figure dissolves into a visceral symbiosis with its surroundings, employing nervous brushstrokes in a range of greens, ochres, and yellows that transform the torso into a kind of ever-expanding foliage or moss. The chromatic tension is evident in the subtle flesh-pink nuances that seem to struggle against being absorbed by the dominant organic exuberance, creating a narrative about the fragility of physical identity in the face of nature's force. Through this structural chaos and gestural strokes, the work functions as a cry about finitude and the inevitable reconnection with the wild, where the body ceases to be an isolated entity and becomes integrated into a cycle of growth and decay.",
         gallery: [
             "images/artworksangularpictures/Obra1-3.jpg",
@@ -104,7 +104,7 @@ const artworks = [
         price: 21300,
         theme: "Textual",
         image: "images/artworks/pintura8.webp",
-        model3d: "images/models/obra3d7.glb",
+        model3d: "images/models/PandemicalObjectNo69.glb",
         description: "This piece operates as a conceptual palimpsest where text and image collide to critique the intersection of art history, domesticity, and global crisis. Dominated by a saturated yellow field that evokes both warning and sickness, the work features bold, stencil-like typography that explicitly references a -pandemical decorative object- and pays a satirical or reverent homage to -Bacon-, likely Francis Bacon, and -Kevin-. The background is populated by ghostly, fragmented figures and handwritten anatomical or diaristic notes that add a layer of personal urgency, while the word -IRRELEVANTE- (Irrelevant) is placed provocatively in the center, challenging the viewer to question the value of the art object itself in a time of collective trauma. By blending the aesthetics of a clinical record with neo-expressionist sketching, the piece explores the tension between historical artistic legacies and the mundane, often absurd reality of surviving a contemporary isolation.",
         gallery: [
             "images/artworksangularpictures/Obra1-8.jpg",
@@ -160,7 +160,7 @@ const artworks = [
         price: 15200,
         theme: "Textual",
         image: "images/artworks/pintura12.webp",
-        model3d: "images/models/",
+        model3d: "images/models/TheRiverAlwaysFindsItsPath.glb",
         description: "This piece utilizes a stark, tenebrist background to host a violent eruption of white gestural lines that struggle to form a skeletal or organic structure within the darkness. The inclusion of the text -EL RÍO SIEMPRE ENCUENTRA SU LUGAR- (The river always finds its place) at the top serves as a philosophical anchor, transforming the chaotic dripping and scratching of the paint into a meditation on inevitability and the relentless force of nature or time. The contrast between the rigid, formal typography and the untamed, almost frantic energy of the central figure suggests a tension between human language—our attempt to impose order—and the raw, fluid reality of existence that eventually washes everything away. It is a work about resilience and the quiet, dark persistence of the elements that define our trajectory long before we realize our destination.",
         gallery: [
             "images/artworksangularpictures/Obra1-12.jpg",
@@ -342,7 +342,7 @@ const artworks = [
         price: 21400,
         theme: "Abstract",
         image: "images/artworks/pintura29.webp",
-        model3d: "images/models/obra3d29.glb",
+        model3d: "images/models/TheVerdantOvergrowthofMemory.glb",
         description: "This abstract piece immerses the viewer in a lush, humid atmosphere dominated by varied shades of moss, lime, and forest green. The composition is built through dense, gestural brushstrokes that create a sense of tangled vegetation or a primordial landscape viewed through a hazy lens. At the bottom left, a cluster of deep crimson and pale pink marks suggests a blooming flower or an organic wound, serving as a visceral focal point that interrupts the monochromatic green field. The heavy application of paint and the lack of a traditional horizon line evoke a feeling of psychological immersion, as if the viewer is being absorbed into the silent, relentless expansion of nature or the messy, overlapping layers of an old recollection.",
         gallery: [
             "images/artworksangularpictures/Obra1-25.jpg",
@@ -356,7 +356,7 @@ const artworks = [
         price: 23100,
         theme: "Abstract",
         image: "images/artworks/pintura30.webp",
-        model3d: "images/models/obra3d30.glb",
+        model3d: "images/models/TheArchiveofDiscardedDreams.glb",
         description: "This complex, multi-layered composition functions as a visual diary of psychological clutter, where fragments of memory and societal critiques are scrawled across a chaotic field of ochre, sage green, and earthy reds. The work is heavily populated with handwritten Spanish phrases such as A LA BASURA (To the trash) and MI MAMÁ ME MIMA (My mother pampers me), suggesting a deconstruction of domestic education and the emotional weight of inherited expectations. Through a frantic application of scratching, dripping, and overlapping sketches, the piece explores the tension between the innocence of childhood literacy and the harsh, adult reality of a world in flux, as referenced by the word VIRUELA (Smallpox) and the recurring mention of flies and bare feet. It is a dense, neo-expressionist map of a mind attempting to sort through the irrelevant and the essential, ultimately presenting a portrait of existential overwhelm where language itself becomes a form of structural debris.",
         gallery: [
             "images/artworksangularpictures/Obra1-26.jpg",
@@ -370,7 +370,7 @@ const artworks = [
         price: 16400,
         theme: "Abstract",
         image: "images/artworks/pintura31.webp",
-        model3d: "images/models/obra3d31.glb",
+        model3d: "images/models/TheGildedRepose.glb",
         description: "This figurative portrait explores a moment of domestic stillness, featuring a woman seated against a deep, monolithic crimson background that vibrates with psychological intensity. The subject is rendered with a sallow, lime-green skin tone that suggests a state of illness, otherworldly transition, or the harsh artificial glow of a modern interior, creating a striking tonal dissonance with the fiery red void behind her. Her relaxed posture and direct, knowing gaze offer a sense of quiet defiance or weary acceptance, while the gestural application of white and grey on her garment provides a textural contrast to the smooth, saturated color fields. By stripping away all environmental context, the work forces a raw confrontation between the viewer and the subject's internal state, reflecting on the resilience of the individual spirit when isolated within a bold, overwhelming reality.",
         gallery: [
             "images/artworksangularpictures/Obra1-27.jpg",
@@ -384,7 +384,7 @@ const artworks = [
         price: 18200,
         theme: "Abstract",
         image: "images/artworks/pintura32.webp",
-        model3d: "images/models/obra3d32.glb",
+        model3d: "images/models/TheLuminousDissolution.glb",
         description: "This vertical composition presents a singular, nude figure emerging from or being consumed by a vibrant, monolithic field of pale yellow impasto. The human form is rendered with expressive, earthy tones of sienna and umber, with gestural brushstrokes that prioritize movement and energy over anatomical precision, suggesting a body in the midst of a physical or spiritual transition. A small, dark geometric triangle in the upper left corner acts as a singular point of focus, providing a stark mathematical contrast to the organic, textured chaos of the background. By isolating the figure in such a saturated and brilliant void, the work explores the concept of the individual as a temporary manifestation of light and matter, ultimately reflecting on the fragility of the flesh and the overwhelming persistence of the space that contains it.",
         gallery: [
             "images/artworksangularpictures/Obra1-28.jpg",
@@ -411,6 +411,7 @@ const artworks = [
         price: 13800,
         theme: "Abstract",
         image: "images/artworks/pintura34.webp",
+        model3d: "images/models/TheVerticalPulseofMauve.glb",
         description: "This narrow, vertical composition offers a dense and rhythmic exploration of texture, utilizing a tightly packed arrangement of expressive brushstrokes in shades of mauve, lavender, and muted grey. The overlapping marks create a sense of frantic energy and upward motion, suggesting a wall of organic debris or a concentrated psychological noise that completely fills the frame. By introducing sharp accents of crimson and deep plum beneath the lighter surface layers, the work hints at a hidden, more visceral core that vibrates with a low-frequency intensity. This abstract field rejects a clear focal point, instead inviting the eye to navigate the tangled thicket of pigment and light, ultimately reflecting on the overwhelming nature of persistent thought and the complex, interlocking patterns of the human experience.",
         gallery: [
             "images/artworksangularpictures/Obra1-30.jpg",
@@ -438,6 +439,7 @@ const artworks = [
         price: 20500,
         theme: "Abstract",
         image: "images/artworks/pintura36.webp",
+        model3d: "images/models/ThePrimalTotem.glb",
         description: "This vertical composition presents a singular, distorted figure rendered in earthy tones of sienna, clay, and deep umber against a neutral, bone-colored background. The form is built with thick, aggressive brushstrokes that suggest a primitive or totemic presence, with swirling white and ochre lines marking out wide, staring eyes that evoke a state of hyper-awareness or ancient wisdom. A heavy, black gestural arc crowns the figure like a ceremonial hat or a dark halo, grounding the composition and adding a layer of symbolic authority to the otherwise raw and unrefined silhouette. By stripping away all environmental detail and focusing on the tactile, almost sculptural quality of the paint, the work explores the concept of the archetypal human—a creature of mud and spirit that stands as a silent witness to the passage of time and the enduring power of the instinctual self.",
         gallery: [
             "images/artworksangularpictures/Obra1-32.jpg",
@@ -451,6 +453,7 @@ const artworks = [
         price: 14900,
         theme: "Abstract",
         image: "images/artworks/pintura37.webp",
+        model3d: "images/models/ThePatternsOfSilentGrace.glb",
         description: "This figurative portrait presents a woman seated in a large, dark armchair, framed by a wallpapered interior of pale yellow and vertical stripes. The composition is a rich tapestry of textures, where the intricate, floral lace of the woman’s bodice contrasts with the bold, rhythmic waves of her long skirt and the geometric, heart-themed pattern of the chair’s upholstery. Her relaxed pose and steady, slightly melancholic gaze suggest a deep sense of interiority and patience, while the sallow, olive-toned rendering of her skin adds a layer of psychological complexity that borders on the ethereal. To her right, a peculiar, mauve-colored shadow or figure-like shape leans against the wall, serving as a silent, abstract companion that heightens the dreamlike atmosphere of the room. The work is a study in the harmony of clashing patterns, exploring the domestic space as a sanctuary for quiet reflection and the subtle, often unseen presence of the past.",
         gallery: [
             "images/artworksangularpictures/Obra1-33.jpg",
@@ -478,7 +481,7 @@ const artworks = [
         price: 22900,
         theme: "Abstract",
         image: "images/artworks/pintura39.webp",
-        model3d: "images/models/obra3d39.glb",
+        model3d: "images/models/TheDualPresenceofKindredSpirits.glb",
         description: "This horizontal diptych-style portrait captures two female faces in close proximity, rendered with a raw, expressive intimacy that emphasizes the texture of aging and the warmth of a shared connection. The figure on the left is framed by a wild, dense crown of dark, swirling curls, where deep umber and mahogany tones are interrupted by visceral drips of crimson, suggesting a life force that is both vibrant and uncontained. In contrast, the figure on the right is rendered with lighter, more ethereal tones, her face appearing almost as a pale reflection or a ghostly counterpart emerging from a sallow, yellow-green background. Both subjects share a gentle, knowing smile and clear, observant eyes, yet the heavy impasto and visible brushstrokes strip away any sense of formal artifice to reveal a deeper psychological reality. The work serves as an exploration of the enduring nature of companionship and the softening of individual boundaries over time, where the tactile quality of the paint becomes a metaphor for the lived experience and the inevitable physical dissolution of the self.",
         gallery: [
             "images/artworksangularpictures/Obra1-35.jpg",
@@ -492,6 +495,7 @@ const artworks = [
         price: 17100,
         theme: "Abstract",
         image: "images/artworks/pintura40.webp",
+        model3d: "images/models/TheWeightofUnfinishedLegacy.glb",
         description: "This text-based composition serves as a stark, conceptual meditation on time, artistic ambition, and the humble reality of the human condition. Executed with precise stenciling on a neutral, parchment-toned background, the work presents a continuous block of Spanish text that reflects on the desire to achieve technical mastery—specifically referencing the legendary painter Sorolla—while being interrupted by the mundane necessities of life and the inevitability of death. The phrases regarding the lack of tortillas and the philosophical transition from wanting to be water but only managing to be stone suggest a profound sense of existential irony and the frustration of unfulfilled potential. By stripping away all imagery and focusing entirely on the rhythmic, mechanical quality of the typography, the work highlights the tension between the permanence of the written word and the transient nature of the artist’s life, ultimately questioning if history will remember the individual’s creative striving or merely their perceived idleness.",
         gallery: [
             "images/artworksangularpictures/Obra1-36.jpg",
